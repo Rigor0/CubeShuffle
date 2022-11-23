@@ -3,17 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class GateManagerBase : MonoBehaviour
+/// <summary>
+/// Gates variables and functionalities
+///
+/// Takes care of:
+///     - keeping the variables and functionalities of gates
+/// <summary>
+public abstract class GateManagerBase : MonoBehaviour
 {
-    
-    void Start()
+    [SerializeField] protected virtual TMP_Text gateNumberText { get; set; }
+    [SerializeField] protected enum GateType
     {
-        
+        PositiveGate,
+        NegativeGate
     }
 
-    
-    void Update()
-    {
-        
-    }
+    [SerializeField] protected GateType gateType;
+    [SerializeField] protected int gateNumber;
+
+    protected abstract int GetGateNumber();
+    protected abstract void RandomGateNumber();
+
+
 }

@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Runner character functionality.
+///
+/// Takes care of:
+///     - registering player inputs
+///     - movement of the character
+///     - increase and decrease numbers of cubes according to characters interaction
+/// <summary>
 public abstract class RunnerBaseManager : MonoBehaviour
 {
     [SerializeField] protected static List<GameObject> cubes;

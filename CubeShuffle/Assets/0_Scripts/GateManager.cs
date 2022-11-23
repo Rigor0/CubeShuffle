@@ -2,17 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GateManager : MonoBehaviour
+/// <summary>
+/// Gates functionality.
+///
+/// Takes care of:
+///     - calculating the random numbers of gates
+/// <summary>
+
+public class GateManager : GateManagerBase
 {
-    // Start is called before the first frame update
+    public static GateManager instance { get;private set; }
+    private void Awake() 
+    {
+         instance = this;
+    }
     void Start()
     {
-        
+        RandomGateNumber();
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override int GetGateNumber()
     {
-        
+        return gateNumber;
+    }
+
+    protected override void RandomGateNumber()
+    {
+        switch (gateType)
+        {
+            case GateType.PositiveGate:
+                gateNumber = Random.Range(2, 10);
+                gateNumberText.text = gateNumber.ToString();
+                break;
+
+            case GateType.NegativeGate:
+                gateNumber = Random.Range(-2, 10);
+                gateNumberText.text = gateNumber.ToString();
+                break;
+        }
     }
 }

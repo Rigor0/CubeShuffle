@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 
-public class ObjectPooler : MonoSingleton<ObjectPooler>
+public class ObjectPooler : MonoBehaviour
 {
     [System.Serializable]
     public class Pool
@@ -36,7 +36,7 @@ public class ObjectPooler : MonoSingleton<ObjectPooler>
     }
 
 
-    public GameObject GetPooledObject(string tag)
+    public GameObject GetPooledObject(string tag, Vector3 position)
     {
         if (!poolDictionary.ContainsKey(tag))
         {
