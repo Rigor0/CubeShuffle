@@ -20,10 +20,12 @@ public abstract class GateManagerBase : MonoBehaviour
 
     [SerializeField] protected GateType gateType;
     [SerializeField] protected int gateNumber;
+    [SerializeField] protected int numOfGate;
 
 
     protected abstract int GetGateNumber();
     protected abstract void RandomGateNumber();
+    //protected abstract int GetTotalGateNumSum(int positiveNumber);
 
 
 }

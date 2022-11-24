@@ -15,10 +15,11 @@ public class ObjectPooler : MonoBehaviour
     }
     public Dictionary<string, Queue<GameObject>> poolDictionary;
     public List<Pool> pools;
+    GateManager gateManager;
 
     #region Singleton
-    public static ObjectPooler instance { get;private set; }
-    private void OnEnable() 
+    public static ObjectPooler instance { get; private set; }
+    private void OnEnable()
     {
         instance = this;
     }
@@ -26,10 +27,13 @@ public class ObjectPooler : MonoBehaviour
 
     void Awake()
     {
+        gateManager = GateManager.instance;
+
         poolDictionary = new Dictionary<string, Queue<GameObject>>();
 
         foreach (Pool pool in pools)
         {
+            //gateManager
             Queue<GameObject> objectPool = new Queue<GameObject>();
 
             for (int i = 0; i < pool.size; i++)

@@ -37,6 +37,8 @@ public class GateManager : GateManagerBase
             case GateType.PositiveGate:
                 gateNumber = Random.Range(2, 10);
                 gateNumberText.text = "+" + gateNumber.ToString();
+                //GetTotalGateNumSum(gateNumber);
+                Debug.Log(gateNumber);
                 break;
 
             case GateType.NegativeGate:
@@ -45,4 +47,14 @@ public class GateManager : GateManagerBase
                 break;
         }
     }
+
+   /*protected override int GetTotalGateNumSum(int positiveNumber)
+    {
+        for (int i = 0; i <numOfGate; i++)
+        {
+            gateNumber += gateNumber;
+        }
+
+        return gateNumber;
+    }*/
 }

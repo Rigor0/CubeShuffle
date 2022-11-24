@@ -560,10 +560,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6847571255666009378}
-  - component: {fileID: -6859230826378866526}
+  - component: {fileID: 7720475847103010800}
   m_Layer: 0
   m_Name: NegativeGate
-  m_TagString: Untagged
+  m_TagString: NegativeGate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,7 +587,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-6859230826378866526
+--- !u!114 &7720475847103010800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

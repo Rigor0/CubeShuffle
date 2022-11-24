@@ -141,7 +141,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772737735}
     m_Modifications:
-    - target: {fileID: 5948017253683846285, guid: 014e4619272e42c41a73c5b15bd0ed06, type: 3}
+    - target: {fileID: -6313700184423151792, guid: 014e4619272e42c41a73c5b15bd0ed06, type: 3}
       propertyPath: gateNumberText
       value: 
       objectReference: {fileID: 1918546137}
@@ -305,10 +305,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772737735}
     m_Modifications:
-    - target: {fileID: -6859230826378866526, guid: 546be47b41b187345976a7daf818db2e, type: 3}
-      propertyPath: gateNumberText
-      value: 
-      objectReference: {fileID: 1033948877}
     - target: {fileID: 6847571255666009377, guid: 546be47b41b187345976a7daf818db2e, type: 3}
       propertyPath: m_Name
       value: NegativeGate
@@ -357,6 +353,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7720475847103010800, guid: 546be47b41b187345976a7daf818db2e, type: 3}
+      propertyPath: gateNumberText
+      value: 
+      objectReference: {fileID: 1033948877}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 546be47b41b187345976a7daf818db2e, type: 3}
 --- !u!4 &461768037 stripped
@@ -526,7 +526,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772737735}
     m_Modifications:
-    - target: {fileID: 5948017253683846285, guid: 014e4619272e42c41a73c5b15bd0ed06, type: 3}
+    - target: {fileID: -6313700184423151792, guid: 014e4619272e42c41a73c5b15bd0ed06, type: 3}
       propertyPath: gateNumberText
       value: 
       objectReference: {fileID: 1418024262}
@@ -788,10 +788,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772737735}
     m_Modifications:
-    - target: {fileID: -6859230826378866526, guid: 546be47b41b187345976a7daf818db2e, type: 3}
-      propertyPath: gateNumberText
-      value: 
-      objectReference: {fileID: 273317825}
     - target: {fileID: 6847571255666009377, guid: 546be47b41b187345976a7daf818db2e, type: 3}
       propertyPath: m_Name
       value: NegativeGate (1)
@@ -840,6 +836,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7720475847103010800, guid: 546be47b41b187345976a7daf818db2e, type: 3}
+      propertyPath: gateNumberText
+      value: 
+      objectReference: {fileID: 273317825}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 546be47b41b187345976a7daf818db2e, type: 3}
 --- !u!4 &1120340239 stripped
@@ -859,7 +859,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772737735}
     m_Modifications:
-    - target: {fileID: 5948017253683846285, guid: 014e4619272e42c41a73c5b15bd0ed06, type: 3}
+    - target: {fileID: -6313700184423151792, guid: 014e4619272e42c41a73c5b15bd0ed06, type: 3}
       propertyPath: gateNumberText
       value: 
       objectReference: {fileID: 1245197552}
@@ -1143,10 +1143,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772737735}
     m_Modifications:
-    - target: {fileID: -6859230826378866526, guid: 546be47b41b187345976a7daf818db2e, type: 3}
-      propertyPath: gateNumberText
-      value: 
-      objectReference: {fileID: 490003326}
     - target: {fileID: 6847571255666009377, guid: 546be47b41b187345976a7daf818db2e, type: 3}
       propertyPath: m_Name
       value: NegativeGate (2)
@@ -1195,6 +1191,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7720475847103010800, guid: 546be47b41b187345976a7daf818db2e, type: 3}
+      propertyPath: gateNumberText
+      value: 
+      objectReference: {fileID: 490003326}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 546be47b41b187345976a7daf818db2e, type: 3}
 --- !u!4 &1490738577 stripped
@@ -1260,7 +1260,7 @@ MonoBehaviour:
   pools:
   - tag: Cube
     prefab: {fileID: 919132149155446097, guid: b3252ebc288efda4c93df07fb7d69bea, type: 3}
-    size: 10
+    size: 40
 --- !u!1 &1764177113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,7 +1379,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772737735}
     m_Modifications:
-    - target: {fileID: 5948017253683846285, guid: 014e4619272e42c41a73c5b15bd0ed06, type: 3}
+    - target: {fileID: -6313700184423151792, guid: 014e4619272e42c41a73c5b15bd0ed06, type: 3}
       propertyPath: gateNumberText
       value: 
       objectReference: {fileID: 1610750518}
@@ -1567,7 +1567,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772737735}
     m_Modifications:
-    - target: {fileID: 5948017253683846285, guid: 014e4619272e42c41a73c5b15bd0ed06, type: 3}
+    - target: {fileID: -6313700184423151792, guid: 014e4619272e42c41a73c5b15bd0ed06, type: 3}
       propertyPath: gateNumberText
       value: 
       objectReference: {fileID: 652184644}

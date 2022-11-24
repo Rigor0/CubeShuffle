@@ -107,10 +107,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8442460815590659945}
-  - component: {fileID: 5948017253683846285}
+  - component: {fileID: -6313700184423151792}
   m_Layer: 0
   m_Name: PositiveGate
-  m_TagString: Untagged
+  m_TagString: PositiveGate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,7 +134,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5948017253683846285
+--- !u!114 &-6313700184423151792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f4f28878c65eb449c7af8e77add5af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gateNumberText: {fileID: 0}
   gateType: 0
   gateNumber: 0
 --- !u!1 &8442460815870774025
