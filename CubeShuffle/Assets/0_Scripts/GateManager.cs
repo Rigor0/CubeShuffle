@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 /// <summary>
@@ -35,12 +36,12 @@ public class GateManager : GateManagerBase
         {
             case GateType.PositiveGate:
                 gateNumber = Random.Range(2, 10);
-                gateNumberText.text = gateNumber.ToString();
+                gateNumberText.text = "+" + gateNumber.ToString();
                 break;
 
             case GateType.NegativeGate:
                 gateNumber = Random.Range(-2, 10);
-                gateNumberText.text = gateNumber.ToString();
+                gateNumberText.text = "-" + gateNumber.ToString();
                 break;
         }
     }

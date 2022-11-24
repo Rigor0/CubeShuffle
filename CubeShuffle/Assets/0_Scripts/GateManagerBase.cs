@@ -11,7 +11,7 @@ using TMPro;
 /// <summary>
 public abstract class GateManagerBase : MonoBehaviour
 {
-    [SerializeField] protected virtual TMP_Text gateNumberText { get; set; }
+    [SerializeField] public TMP_Text gateNumberText;
     [SerializeField] protected enum GateType
     {
         PositiveGate,
@@ -20,6 +20,7 @@ public abstract class GateManagerBase : MonoBehaviour
 
     [SerializeField] protected GateType gateType;
     [SerializeField] protected int gateNumber;
+
 
     protected abstract int GetGateNumber();
     protected abstract void RandomGateNumber();
