@@ -11,11 +11,14 @@ using UnityEngine;
 
 public class GateManager : GateManagerBase
 {
-    public static GateManager instance { get;private set; }
-    private void Awake() 
+    #region Singleton
+    public static GateManager instance { get; private set; }
+    private void OnEnable()
     {
-         instance = this;
+        instance = this;
     }
+    #endregion
+
     void Start()
     {
         RandomGateNumber();

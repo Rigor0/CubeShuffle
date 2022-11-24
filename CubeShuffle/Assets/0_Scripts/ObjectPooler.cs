@@ -16,6 +16,14 @@ public class ObjectPooler : MonoBehaviour
     public Dictionary<string, Queue<GameObject>> poolDictionary;
     public List<Pool> pools;
 
+    #region Singleton
+    public static ObjectPooler instance { get;private set; }
+    private void OnEnable() 
+    {
+        instance = this;
+    }
+    #endregion
+
     void Awake()
     {
         poolDictionary = new Dictionary<string, Queue<GameObject>>();
