@@ -4,25 +4,39 @@ using UnityEngine;
 
 public class RunnerManager : RunnerBaseManager
 {
-   
+
     void Start()
     {
-        
+
     }
 
-    
+
     void Update()
     {
         HandleMovement();
     }
 
-     protected override void DecreaseCubeNumber()
+
+    private void OnTriggerEnter(Collider other)
     {
-        throw new System.NotImplementedException();
+        if (other.gameObject.CompareTag("PositiveGate"))
+        {
+            IncreaseCubeNumber();
+        }
+        else if (other.gameObject.CompareTag("NegativeGate"))
+        {
+            DecreaseCubeNumber();
+        }
     }
 
     protected override void IncreaseCubeNumber()
     {
         throw new System.NotImplementedException();
     }
+
+    protected override void DecreaseCubeNumber()
+    {
+        throw new System.NotImplementedException();
+    }
+
 }

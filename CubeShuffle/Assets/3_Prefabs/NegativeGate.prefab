@@ -100,7 +100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- 20'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc0da4bb1989aa74f932ec371ca73c21, type: 2}
   m_sharedMaterial: {fileID: 4655476564042523539, guid: fc0da4bb1989aa74f932ec371ca73c21, type: 2}
@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 6847571255558957791}
   - component: {fileID: 1682937422310640212}
   m_Layer: 0
-  m_Name: Red Gradient
+  m_Name: RedGradient
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,7 +448,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6847571255558957789}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.9999998, y: 3.9999998, z: 0}
@@ -560,7 +560,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6847571255666009378}
-  - component: {fileID: 7720475847103010800}
   m_Layer: 0
   m_Name: NegativeGate
   m_TagString: NegativeGate
@@ -587,18 +586,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7720475847103010800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6847571255666009377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9f4f28878c65eb449c7af8e77add5af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gateNumberText: {fileID: 0}
-  gateType: 1
-  gateNumber: 0

@@ -9,23 +9,12 @@ using TMPro;
 /// Takes care of:
 ///     - keeping the variables and functionalities of gates
 /// <summary>
-public abstract class GateManagerBase : MonoBehaviour
+public abstract class GateBaseManager : MonoBehaviour
 {
     [SerializeField] public TMP_Text gateNumberText;
-    [SerializeField] protected enum GateType
-    {
-        PositiveGate,
-        NegativeGate
-    }
-
-    [SerializeField] protected GateType gateType;
+    [SerializeField] protected List<GameObject> gates;
     [SerializeField] protected int gateNumber;
-    [SerializeField] protected int numOfGate;
-
 
     protected abstract int GetGateNumber();
     protected abstract void RandomGateNumber();
-    //protected abstract int GetTotalGateNumSum(int positiveNumber);
-
-
 }

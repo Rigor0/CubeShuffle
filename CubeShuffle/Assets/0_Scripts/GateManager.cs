@@ -10,7 +10,7 @@ using UnityEngine;
 ///     - calculating the random numbers of gates
 /// <summary>
 
-public class GateManager : GateManagerBase
+public class GateManager : GateBaseManager
 {
     #region Singleton
     public static GateManager instance { get; private set; }
@@ -20,7 +20,7 @@ public class GateManager : GateManagerBase
     }
     #endregion
 
-    void Start()
+    void Awake()
     {
         RandomGateNumber();
     }
@@ -32,29 +32,21 @@ public class GateManager : GateManagerBase
 
     protected override void RandomGateNumber()
     {
-        switch (gateType)
+        foreach (var gate in gates)
         {
-            case GateType.PositiveGate:
+            if (gate.CompareTag("PositiveGate"))
+            {
                 gateNumber = Random.Range(2, 10);
+                gateNumberText = gate.transform.Find("GreenGradient/GateNumberText").GetComponent<TMP_Text>();
                 gateNumberText.text = "+" + gateNumber.ToString();
-                //GetTotalGateNumSum(gateNumber);
-                Debug.Log(gateNumber);
-                break;
-
-            case GateType.NegativeGate:
-                gateNumber = Random.Range(-2, 10);
-                gateNumberText.text = "-" + gateNumber.ToString();
-                break;
+            }
+            else if (gate.CompareTag("NegativeGate"))
+            {
+                gateNumber = Random.Range(-2, -10);
+                gateNumberText = gate.transform.Find("RedGradient/GateNumberText").GetComponent<TMP_Text>();
+                gateNumberText.text = gateNumber.ToString();
+            }  
         }
     }
 
-   /*protected override int GetTotalGateNumSum(int positiveNumber)
-    {
-        for (int i = 0; i <numOfGate; i++)
-        {
-            gateNumber += gateNumber;
-        }
-
-        return gateNumber;
-    }*/
 }
