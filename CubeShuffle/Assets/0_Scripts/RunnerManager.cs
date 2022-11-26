@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class RunnerManager : RunnerBaseManager
 {
+    ObjectPooler objectPooler;
 
     void Start()
     {
-
+        objectPooler = ObjectPooler.instance;
     }
 
 
@@ -31,7 +32,7 @@ public class RunnerManager : RunnerBaseManager
 
     protected override void IncreaseCubeNumber()
     {
-        throw new System.NotImplementedException();
+        objectPooler.GetPooledObject("Cube", Vector3.zero);
     }
 
     protected override void DecreaseCubeNumber()
