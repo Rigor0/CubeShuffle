@@ -12,7 +12,7 @@ using UnityEngine;
 /// <summary>
 public abstract class RunnerBaseManager : MonoBehaviour
 {
-    [SerializeField] protected static List<GameObject> cubes;
+    [SerializeField] protected List<GameObject> cubes;
     protected new Rigidbody rigidbody;
     protected Animator animator;
 

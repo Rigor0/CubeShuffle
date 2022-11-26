@@ -25,28 +25,30 @@ public class GateManager : GateBaseManager
         RandomGateNumber();
     }
 
-    protected override int GetGateNumber()
+    /*public override int GetGateNumber(int upgradedGateNumber)
     {
-        return gateNumber;
-    }
+        return upgradedGateNumber;
+    }*/
 
     protected override void RandomGateNumber()
     {
         foreach (var gate in gates)
         {
+            
             if (gate.CompareTag("PositiveGate"))
             {
                 gateNumber = Random.Range(2, 10);
+                randomGatePositiveNumberHolder.Add(gateNumber);
                 gateNumberText = gate.transform.Find("GreenGradient/GateNumberText").GetComponent<TMP_Text>();
                 gateNumberText.text = "+" + gateNumber.ToString();
             }
             else if (gate.CompareTag("NegativeGate"))
             {
                 gateNumber = Random.Range(-2, -10);
+                randomGateNegativeNumberHolder.Add(gateNumber);
                 gateNumberText = gate.transform.Find("RedGradient/GateNumberText").GetComponent<TMP_Text>();
                 gateNumberText.text = gateNumber.ToString();
             }  
         }
     }
-
 }

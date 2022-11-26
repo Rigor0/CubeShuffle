@@ -11,10 +11,12 @@ using TMPro;
 /// <summary>
 public abstract class GateBaseManager : MonoBehaviour
 {
+    public List<int> randomGatePositiveNumberHolder;
+    public List<int> randomGateNegativeNumberHolder;
     [SerializeField] public TMP_Text gateNumberText;
     [SerializeField] protected List<GameObject> gates;
-    [SerializeField] protected int gateNumber;
+    [SerializeField] public int gateNumber;
 
-    protected abstract int GetGateNumber();
+    //public abstract int GetGateNumber(int upgradedGateNumber);
     protected abstract void RandomGateNumber();
 }
